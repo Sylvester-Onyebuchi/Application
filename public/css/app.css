@@ -1,0 +1,90 @@
+.form-container{
+    width: 350px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.form-group .register{
+    width: 100%;
+    padding: 9px;
+    background-color: #d18888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+.form-group .login{
+    width: 100%;
+    padding: 8px;
+    background-color: #8f9194;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container  h3{
+    text-align: center;
+    padding: 5px;
+    background-color: lightseagreen;
+    color: black;
+    margin-left: 125px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-container .error{
+    text-align: center;
+    color: red;
+    font-size: large;
+}
+.form-container .success{
+    text-align: center;
+    color: green;
+    font-size: large;
+}
+.form-container .form button{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-left: 129px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close{
+    float: right;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #000;
+    text-shadow: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.close:hover{
+    opacity: 1;
+}
