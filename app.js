@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(session({
     secret:process.env.SECRET,
-    store: mongoStore.create({mongoUrl:process.env.MONGO_DB}),
+    store: mongoStore.create({mongoUrl:process.env.MONGO_DB, collectionName:'session'}),
     resave: false,
     saveUninitialized: false,
     cookie: {maxAge: 2 * 24 * 60 * 60 * 1000}
