@@ -7,14 +7,14 @@ const passport = require('./middleware/passport')
 const mongoStore = require('connect-mongo')
 require('dotenv').config()
 const app = express()
-const port = process.env.PORT || 5000
-mongoose.connect(process.env.MONGO_DB || "mongodb://localhost:27017/TODO")
+const port = 3000
+mongoose.connect("mongodb://localhost:27017/TODO")
 .then(() => console.log("Database connected successfully"))
 .catch(err => {console.log(err)})
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(session({
-    secret:process.env.SECRET || 'Todo-App',
+    secret: 'Todo-App',
     store: mongoStore.create({mongoUrl:'mongodb://localhost:27017/TODO', collectionName:'session'}),
     resave: false,
     saveUninitialized: false,
